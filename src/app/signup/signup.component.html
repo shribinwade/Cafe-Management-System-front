@@ -25,6 +25,7 @@
                  <input matInput formControlName="email" type="email" required>
                    <mat-error *ngIf="signupForm.controls.email.touched && signupForm.controls.name.invalid">
                        <span *ngIf="signupForm.controls.email.errors.required">This field is mandatory</span>
+                       <span *ngIf="signupForm.controls.email.errors.pattern">This field is invalid</span>
                    </mat-error>
             </mat-form-field>
 
@@ -33,6 +34,7 @@
               <input matInput formControlName="contactNumber"  required>
                <mat-error *ngIf="signupForm.controls.contactNumber.touched && signupForm.controls.contactNumber.invalid">
                    <span *ngIf="signupForm.controls.contactNumber.errors.required">This field is mandatory</span>
+                   <span *ngIf="signupForm.controls.contactNumber.errors.pattern">This field is invalid</span>
                    
                </mat-error>
            </mat-form-field>
@@ -43,9 +45,8 @@
        <button type="button" mat-icon-button matSuffix (click)="confirmPassword = !confirmPassword"  [attr.aria-label]="'Hide password'" [attr.aria-pressed]="password">
              <mat-icon>{{confirmPassword?'visibility_off':'visibility'}}</mat-icon>
        </button>
-       <mat-error *ngIf="signupForm.controls.password.touched && signupForm.controls.password.invalid">
+           <mat-error *ngIf="signupForm.controls.password.touched && signupForm.controls.password.invalid">
                <span *ngIf="signupForm.controls.password.errors.required">This field is mandatory</span>
-               
            </mat-error>
        </mat-form-field>
 
