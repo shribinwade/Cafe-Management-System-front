@@ -63,7 +63,7 @@
                    <span>Password & Confirm Password does not match.</span>
             </mat-hint>
             
-            <mat-hint style="color:green;" *ngIf="!validateSubmit()">
+            <mat-hint style="color:green;" *ngIf="!validateSubmit() && (signupForm.controls.confirmPassword.dirty) ">
                 <span>Password Matched</span>
          </mat-hint>
        </mat-form-field>
