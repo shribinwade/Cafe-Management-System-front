@@ -8,11 +8,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CdkTableModule } from '@angular/cdk/table';
 import { ViewBillProductsComponent } from './dialog/view-bill-products/view-bill-products.component';
+import { ConfirmationComponent } from './dialog/confirmation/confirmation.component';
+import { ChangePasswordComponent } from './dialog/change-password/change-password.component';
 
 
 
 @NgModule({
-  declarations: [ViewBillProductsComponent],
+  declarations: [ViewBillProductsComponent, ConfirmationComponent, ChangePasswordComponent],
   imports: [
     
     CommonModule,

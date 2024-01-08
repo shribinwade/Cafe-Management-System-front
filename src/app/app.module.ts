@@ -5,11 +5,10 @@ import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './shared/material-module';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { BestSellerComponent } from './best-seller/best-seller.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FullComponent } from './layouts/full/full.component';
 import { HeaderComponent } from './layouts/full/header/header.component';
@@ -20,6 +19,7 @@ import { NgxUiLoaderConfig, NgxUiLoaderModule, SPINNER } from 'ngx-ui-loader';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { LoginComponent } from './login/login.component';
 import { TokenInterceptorInterceptor } from './services/token-interceptor.interceptor';
+
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig={
   text:"Processing...",
@@ -51,7 +51,7 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig={
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    MaterialModule,
+   
     ReactiveFormsModule,
     FormsModule,
     FlexLayoutModule,

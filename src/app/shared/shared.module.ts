@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { AccordionDirective ,AccordionAnchorDirective,AccordionLinkDirective} from './accordion';
+import { MenuItems } from './menu-items';
+import { MaterialModule } from './material-module';
 
 
 
@@ -8,15 +10,18 @@ import { AccordionDirective ,AccordionAnchorDirective,AccordionLinkDirective} fr
   declarations: [
     AccordionAnchorDirective,
     AccordionLinkDirective,
-    AccordionDirective
+    AccordionDirective,
+    
+    
   ],
   exports: [
     AccordionAnchorDirective,
     AccordionLinkDirective,
-    AccordionDirective
+    AccordionDirective,
+    MaterialModule
+    
    ],
-  imports: [
-    CommonModule
-  ]
+   providers:[MenuItems]
+  
 })
 export class SharedModule { }

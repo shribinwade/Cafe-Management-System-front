@@ -3,12 +3,13 @@ import { DashboardService } from '../services/dashboard.service';
 import { NgxUiLoaderService } from 'ngx-ui-loader';
 import { SnackbarService } from '../services/snackbar.service';
 import { GlobalConstants } from '../shared/global-constant';
-import {MatCardModule} from '@angular/material/card';
+
+
 
 @Component({
   selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  templateUrl: 'dashboard.component.html',
+  styleUrls: ['dashboard.component.scss']
   
 })
 export class DashboardComponent {
