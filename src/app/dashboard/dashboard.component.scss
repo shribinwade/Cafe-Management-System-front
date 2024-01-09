@@ -1,19 +1,39 @@
+mat-card{
+    padding: 20px;
+    box-shadow: 100px;
+    
+}
 .card{
-    border: 300px;
-    border-color: blue;
+    background-color: white;
+    float: left;
+    width: 350px;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    box-shadow: 100px;
 }
+
+button{
+    width: 100%;
+    box-shadow: 100px;
+}
+
 .container{
-    border: 300px;
-    border-color: blue;
+    box-shadow: 100px;
 }
+
 .row{
-    border: 300px;
-    border-color: blue;
+  background-color: white;
+  box-shadow: 100px;
 }
+
 .column{
-    border: 300px;
-    border-color: blue;
+    box-shadow: 100px;
 }
+
 body{
-    background-color: rgb(201, 23, 23);
+    margin: 10px;
+    box-shadow: 100px;
 }

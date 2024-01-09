@@ -2,12 +2,13 @@ import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
 import { MediaMatcher } from '@angular/cdk/layout';
 import { Menu, MenuItems } from 'src/app/shared/menu-items';
 import { jwtDecode } from 'jwt-decode';
-import { MatDialogRef} from '@angular/material/dialog';
+
 
 
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
+  styleUrls: ['sidebar.component.scss']
   
 })
 export class SidebarComponent implements OnDestroy{
@@ -21,7 +22,8 @@ export class SidebarComponent implements OnDestroy{
   constructor(
     changeDetectorRef: ChangeDetectorRef,
     media: MediaMatcher,
-    public menuItems:MenuItems
+    public menuItems:MenuItems,
+
   ) {
     this.tokenPayload = jwtDecode(this.token);
     this.userRole = this.tokenPayload?.role;

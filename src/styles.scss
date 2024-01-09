@@ -35,17 +35,17 @@ $CMS-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+
 body {  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
  //responsibe table
- @media(max-width: 800px) {
+ @media(max-width: 100%) {
     .responsive_table {
         overflow-x: auto !important;
     }
   
-    .mat-table {
-        min-width:800px;
-    }
+    // .mat-table {
+    //     min-width:800px;
+    // }
   }
   
   .mat-row {
@@ -83,3 +83,6 @@ body {  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body{
+ 
+}

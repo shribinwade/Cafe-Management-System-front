@@ -10,11 +10,13 @@ import { CdkTableModule } from '@angular/cdk/table';
 import { ViewBillProductsComponent } from './dialog/view-bill-products/view-bill-products.component';
 import { ConfirmationComponent } from './dialog/confirmation/confirmation.component';
 import { ChangePasswordComponent } from './dialog/change-password/change-password.component';
+import { ManageCategoryComponent } from './manage-category/manage-category.component';
+import { CategoryComponent } from './dialog/category/category.component';
 
 
 
 @NgModule({
-  declarations: [ViewBillProductsComponent, ConfirmationComponent, ChangePasswordComponent],
+  declarations: [ViewBillProductsComponent, ConfirmationComponent, ChangePasswordComponent, ManageCategoryComponent, CategoryComponent],
   imports: [
     
     CommonModule,

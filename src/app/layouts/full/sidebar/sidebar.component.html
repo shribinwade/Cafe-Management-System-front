@@ -3,10 +3,10 @@
 <mat-nav-list appAccordion>
     <mat-list-item appAccordionLink *ngFor="let menuitem of menuItems.getMenuitem()"
     routerLinkActive="selected" group=menuitem.state>
-    <a class="" appAccordionToggle [routerLink]="['/cafe/',menuitem.state]"
+    <a class="link" appAccordionToggle [routerLink]="['/cafe/',menuitem.state]"
        *ngIf="menuitem.type==='link'&&(menuitem.role===''|| menuitem.role===userRole)">
        <button mat-flat-button color="primary"> <mat-icon>{{menuitem.icon}}</mat-icon>
-       <span> {{menuitem.name}}</span></button>
+        {{menuitem.name}}</button>
     </a>   
     </mat-list-item>
 </mat-nav-list>
