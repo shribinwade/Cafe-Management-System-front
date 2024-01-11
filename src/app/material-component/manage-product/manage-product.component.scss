@@ -1,0 +1,53 @@
+.float-right{
+    float: right;
+    margin: 10px;
+    width: 20%;
+}
+.heading{
+    padding: 10px;
+    justify-content: space-between;
+    margin: 10px;
+}
+b{
+    padding: 10px;
+    margin: 10px;
+    float: left;
+}
+
+.filter{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+}
+
+.responsive_table{
+    margin: 10px; 
+}
+table{
+    padding: 20px;
+    width: 100%;
+}
+.action-link{
+    text-align: end;
+}
+p{
+    padding-left: 30px;
+    margin-left: 40px;
+    text-align: center;  
+
+}
+
+table{
+    width: 100%;
+}
+
+button{
+    padding: 3px;
+    margin: 3px;
+}
+
+::ng-deep .highlight{
+    color: white;
+    background: #673AB7;
+}

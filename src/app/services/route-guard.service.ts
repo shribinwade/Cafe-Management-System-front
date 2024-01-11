@@ -14,7 +14,8 @@ export class RouteGuardService {
     public router:Router,
     private snackbarService:SnackbarService ) { }
 
-    canActivate(route:ActivatedRouteSnapshot):boolean{
+    canActivate(route:ActivatedRouteSnapshot):boolean
+    {
       let expectedRoleArray=route.data;
       expectedRoleArray = expectedRoleArray['expectedRole'];
 
