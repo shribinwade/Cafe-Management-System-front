@@ -14,11 +14,12 @@ import { ManageCategoryComponent } from './manage-category/manage-category.compo
 import { CategoryComponent } from './dialog/category/category.component';
 import { ManageProductComponent } from './manage-product/manage-product.component';
 import { ProductComponent } from './dialog/product/product.component';
+import { ManageOrderComponent } from './manage-order/manage-order.component';
 
 
 
 @NgModule({
-  declarations: [ViewBillProductsComponent, ConfirmationComponent, ChangePasswordComponent, ManageCategoryComponent, CategoryComponent, ManageProductComponent, ProductComponent],
+  declarations: [ViewBillProductsComponent, ConfirmationComponent, ChangePasswordComponent, ManageCategoryComponent, CategoryComponent, ManageProductComponent, ProductComponent, ManageOrderComponent],
   imports: [
     
     CommonModule,

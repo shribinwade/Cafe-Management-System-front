@@ -3,7 +3,11 @@ export class GlobalConstants{
     //Message
     public static genericError:string = "Something went wrong.Please try again later";
 
-    public static unauthroized:string = "Not Authorized"
+    public static unauthroized:string = "Not Authorized";
+
+    public static productExistError:string = "Product already exists";
+
+    public static productAdded: string = "Product added successfully";
 
     //Regex
     public static nameRegex:string = "[a-zA-Z]*";
