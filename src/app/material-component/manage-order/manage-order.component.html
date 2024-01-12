@@ -2,7 +2,7 @@
     <mat-card class="heading">
        <span>
         <b>Manage Category</b>
-        <button mat-flat-button color="primary" class="float-right" [disabled]="" (click)="submitAction()">
+        <button mat-flat-button color="primary" class="float-right" [disabled]="validateSubmit()" (click)="submitAction()">
         <mat-icon>print</mat-icon> Submit & Get Bill
         </button>
        </span>
@@ -66,10 +66,10 @@
  </mat-card>
  <hr>
 
- <mat-card>
+ <mat-card class="sp">
  <span><b>Select Product:-</b></span>
 
- <form [formGroup]="manageOrderForm">
+   <form [formGroup]="manageOrderForm">
      <div fxFlex fxLayout="column">
         <div fxLayout="row wrap">
              <mat-form-field appearance="outline" fxFlex>
