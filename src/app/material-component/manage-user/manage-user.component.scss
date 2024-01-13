@@ -1,0 +1,49 @@
+.float-right{
+    float: right;
+    margin: 10px;
+    width: 20%;
+}
+.heading{
+    padding: 10px;
+    justify-content: space-between;
+    margin: 20px;
+}
+b{
+    padding: 10px;
+    margin: 10px;
+    float: left;
+}
+
+.filter{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+}
+
+
+
+.action-link{
+    text-align: center;
+}
+p{
+    padding-left: 10px;
+    
+    text-align: center;  
+}
+
+table{
+    margin: 20px;
+    padding: 20px;
+   
+}
+
+button{
+    padding: 3px;
+    margin: 3px;
+}
+
+::ng-deep .highlight{
+    color: white;
+    background: #673AB7;
+}
